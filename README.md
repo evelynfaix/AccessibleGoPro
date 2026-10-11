@@ -6,6 +6,12 @@ The core goal is to enable blind users to record video, manage all camera settin
 
 This project is inspired by the OpenGoPro repository, which defines how to communicate with GoPro devices and provides examples for integration across languages and platforms.
 
+## Target device
+
+The first supported device for this project is the GoPro Hero 9 Black.
+
+This is the initial target because it is a commonly used GoPro model with a broad feature set and a strong fit for a practical accessibility-first MVP.
+
 ## Why this project matters
 
 Many camera systems are designed around visual feedback. For blind and low-vision users, that creates a major barrier to basic recording tasks such as starting a capture, switching modes, checking battery, and managing settings.
@@ -52,13 +58,13 @@ The first version is designed around these core tasks:
 
 The first version of the project focuses on a realistic and achievable MVP:
 
-- connect to a GoPro from an iPhone
+- connect to a GoPro Hero 9 Black from an iPhone
 - read battery level and current mode aloud
 - read all current camera settings
 - start and stop recording
 - take a photo
 - switch between photo and video modes
-- **allow changing all major camera settings (resolution, frame rate, ISO, white balance, etc.)**
+- allow changing all major camera settings (resolution, frame rate, ISO, white balance, etc.)
 - announce important status changes and errors clearly
 - provide spoken confirmation for every setting change
 
@@ -82,7 +88,7 @@ This project begins with iOS because the creator has an iPhone and because Voice
 
 A simple first experience could look like this:
 
-1. User opens the app and connects to their GoPro.
+1. User opens the app and connects to their GoPro Hero 9 Black.
 2. App announces connection status and camera name.
 3. App reads battery level, recording status, and current mode.
 4. App offers a menu of settings to adjust.
@@ -136,7 +142,7 @@ If you want to contribute, open an issue, suggest a feature, or help prototype t
 ### Phase 1: Research and prototype
 
 - confirm the best GoPro communication path using OpenGoPro
-- build a simple connection prototype
+- build a simple connection prototype with Hero 9 Black
 - map all available GoPro settings and their possible values
 - create a first VoiceOver-friendly settings interface
 - test spoken status updates and confirmation messages
